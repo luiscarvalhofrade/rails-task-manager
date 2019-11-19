@@ -1,0 +1,10 @@
+<h1>Tasks</h1>
+<p><%= "===========================" %></p>
+
+<% @tasks.each do |element|  %>
+  <p><%= element.id %>. <%= link_to element.title, task_path(element) %></p>
+<% end %>
+
+
+<p><%= "===========================" %></p>
+<p><%= link_to "NEW TASK", new_path %></p>
